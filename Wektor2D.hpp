@@ -6,13 +6,13 @@ private:
 public:
     Wektor2D()
     {
-        cout << "Stworzylem wektor doyslny";
+    
         x = 0;
         y = 0;
     }
     Wektor2D(double p_x, double p_y)
     {
-        cout << "Stworzylem wektor niedomyslny";
+        //cout << "Stworzylem wektor niedomyslny";
         x = p_x;
         y = p_y;
     }
