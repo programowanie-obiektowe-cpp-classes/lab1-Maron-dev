@@ -10,4 +10,31 @@ class Wektor2D
         x = p_x;
         y = p_y;
     }
+    void setX(double new_x)
+    {
+        x = new_x;
+    }
+    void setY(double new_y)
+    {
+        y = new_y;
+    }
+    double getX()
+    {
+        return x;
+    }
+    double getY()
+    {
+        return y;
+    }
 };
+
+Wektor2D operator+(Wektor2D w1, Wektor2D w2)
+{
+    return Wektor2D(w1.getX() + w2.getX(), w2.getY()+w2.getY());
+}
+
+Wektor2D operator*(Wektor2D w1, Wektor2D w2)
+{
+    double result;
+    result = (w1.getX() * w2.getX()) + (w1.getY() * w2.getX());
+}
